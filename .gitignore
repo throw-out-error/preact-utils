@@ -13,6 +13,8 @@ logs
 
 # Misc
 .DS_Store
+.parcel-cache
+.dccache
 
 # IDE Settings
 .vscode

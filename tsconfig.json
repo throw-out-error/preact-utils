@@ -10,7 +10,9 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "allowSyntheticDefaultImports": true,
-        "declaration": false,
+        "declaration": true,
+        "jsx": "preserve",
+        "jsxFactory": "h",
         "outDir": "dist"
     },
     "exclude": ["node_modules", "**/*.spec.ts"]
