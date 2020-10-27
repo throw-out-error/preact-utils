@@ -7,6 +7,9 @@ import "./container.scss";
 
 export const Container = ({
     children,
+    ...props
 }: RenderableProps<Record<string, unknown>>): VNode => (
-    <div className="container">{children}</div>
+    <div className="container" {...props}>
+        {children}
+    </div>
 );

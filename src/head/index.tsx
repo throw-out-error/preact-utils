@@ -22,11 +22,13 @@ export class HeadTag extends Component<{ tag: string }, { isClient: boolean }> {
     }
 }
 
-export const Title = (...props: unknown[]) => (
+export const Title = (props: Record<string, unknown>) => (
     <HeadTag tag="title" {...props} />
 );
-export const Style = (...props: unknown[]) => (
+export const Style = (props: Record<string, unknown>) => (
     <HeadTag tag="style" {...props} />
 );
-export const Meta = (...props: unknown[]) => <HeadTag tag="meta" {...props} />;
+export const Meta = (props: Record<string, unknown>) => (
+    <HeadTag tag="meta" {...props} />
+);
 export const Link = (...props: unknown[]) => <HeadTag tag="link" {...props} />;

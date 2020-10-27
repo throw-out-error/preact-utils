@@ -1,0 +1,15 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+
+    li a {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+.navbar-horizontal {
+    display: inline;
+}
