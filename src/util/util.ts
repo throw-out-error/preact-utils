@@ -1,4 +1,4 @@
-import css from "dom-css";
+import { each } from "./dom-css";
 
 export function getInnerWidth(el: HTMLElement): number {
     const { clientWidth } = el;
@@ -19,7 +19,7 @@ export function getScrollbarWidth(): number {
     /* istanbul ignore else */
     if (typeof document !== "undefined") {
         const div = document.createElement("div");
-        css(div, {
+        each(div, {
             width: 100,
             height: 100,
             position: "absolute",

@@ -1,4 +1,4 @@
-import { RenderableProps } from "preact";
+import { h, RenderableProps } from "preact";
 
 export interface FlexProps extends Record<string, unknown> {
     direction?: "column" | "row";

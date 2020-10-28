@@ -5,7 +5,7 @@ export interface ToastData {
     title: string;
     description?: string;
     icon?: string;
-    style?: Record<string, string | number | boolean>;
+    style?: Record<string, string | number>;
     position?: ToastPosition;
 }
 

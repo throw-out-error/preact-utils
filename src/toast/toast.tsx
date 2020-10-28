@@ -1,4 +1,4 @@
-import { RenderableProps } from "preact";
+import { h, RenderableProps } from "preact";
 import { ToastData } from "./types";
 
 export const Toast = ({ toast }: RenderableProps<{ toast: ToastData }>) => {

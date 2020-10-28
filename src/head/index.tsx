@@ -1,4 +1,4 @@
-import { Component, VNode } from "preact";
+import { h, Component, VNode } from "preact";
 import { Portal } from "../portal";
 
 export class HeadTag extends Component<{ tag: string }, { isClient: boolean }> {

@@ -1,12 +1,15 @@
 {
     "name": "@toes/preact-utils",
-    "version": "1.0.0",
-    "description": "",
+    "version": "1.0.0-dev",
+    "description": "preact utility components",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
         "dist"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "build": "pnpm run type-check && parcel build src/index.tsx --no-cache",
         "type-check": "tsc --noEmit",
@@ -20,6 +23,7 @@
     "author": "Theo Paris",
     "license": "GPL-v3.0-or-later",
     "devDependencies": {
+        "@parcel/config-default": "^2.0.0-alpha.3",
         "@parcel/transformer-typescript-tsc": "2.0.0-alpha.3",
         "@types/node": "^14.14.5",
         "@typescript-eslint/eslint-plugin": "^4.6.0",
@@ -34,6 +38,7 @@
     },
     "dependencies": {
         "change-case": "^4.1.1",
-        "preact": "^10.5.5"
+        "preact": "^10.5.5",
+        "preact-router": "^3.2.1"
     }
 }

@@ -1,4 +1,4 @@
-import { RenderableProps } from "preact";
+import { h, RenderableProps } from "preact";
 import "./nav.scss";
 
 export const Navbar = ({
